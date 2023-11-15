@@ -106,7 +106,7 @@ public class AddActivity extends AppCompatActivity implements AdapterView.OnItem
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(AddActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                    Log.d("error", error+"");
                 }
             }) {
                 @Override
